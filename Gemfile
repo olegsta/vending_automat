@@ -13,4 +13,5 @@ gem 'tty-prompt'
 group :test do
   gem 'rspec', '~> 3.0'
   gem 'rubocop'
+  gem 'codecov'
 end

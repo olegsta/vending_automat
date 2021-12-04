@@ -1,4 +1,3 @@
-require 'spec_helper'
 require './lib/vending_automat'
 
 describe VendingAutomat::Product do

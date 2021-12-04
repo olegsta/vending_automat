@@ -1,5 +1,10 @@
 # VendingAutomat
 
+![Gem](https://img.shields.io/gem/v/vending_automat)
+[![Build Status](https://travis-ci.com/olegsta/vending_automat.svg?branch=master)](https://travis-ci.com/github/olegsta/vendding_a)
+[![Test Coverage](https://codecov.io/gh/olegsta/vending_automat/graph/badge.svg)](https://codecov.io/gh/olegsta/vending_automat)
+![Downloads total](https://img.shields.io/gem/dt/vending_automat)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vending_automat`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
