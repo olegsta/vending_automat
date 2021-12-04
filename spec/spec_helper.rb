@@ -18,7 +18,6 @@ require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter 'spec/'
   add_filter '.github/'
-  add_filter 'lib/generators/templates/'
 end
 
 if ENV['CI'] == 'true'

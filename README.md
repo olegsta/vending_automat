@@ -2,48 +2,76 @@
 
 ![Gem](https://img.shields.io/gem/v/vending_automat)
 [![Build Status](https://travis-ci.com/olegsta/vending_automat.svg?branch=master)](https://travis-ci.com/github/olegsta/vendding_a)
-[![Test Coverage](https://codecov.io/gh/olegsta/vending_automat/graph/badge.svg)](https://codecov.io/gh/olegsta/vending_automat)
-![Downloads total](https://img.shields.io/gem/dt/vending_automat)
+[![Test Coverage](https://codecov.io/gh/olegsta/vending_automat/branch/master/graph/badge.svg)](https://codecov.io/gh/olegsta/vending_automat)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vending_automat`. To experiment with that code, run `bin/console` for an interactive prompt.
+### Prerequisites
+Ruby 2.7.2 is required for the project.
 
-TODO: Delete this and the text above, and describe your gem
+### Installation
+Clone or download project.
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'vending_automat'
+Install Gem dependencies.
+```
+bundle install
 ```
 
-And then execute:
+### To start:
+```
+require "vending_automat"
 
-    $ bundle install
+ruby VendingAutomat::VendingMachine.run
+```
 
-Or install it yourself as:
+# Vending Machine
+Vending machine has such menus:
 
-    $ gem install vending_automat
+![Alt text](/images/welcome.png)
 
-## Usage
+We can insert coins:
 
-TODO: Write usage instructions here
+![Alt text](/images/add_coin1.png)
+![Alt text](/images/add_coin2.png)
 
-## Development
+We can insert products:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+![Alt text](/images/add_products1.png)
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/vending_automat. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/vending_automat/blob/master/CODE_OF_CONDUCT.md).
+![Alt text](/images/add_products2.png)
 
 
-## License
+We can buy products:
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+![Alt text](/images/bye_products1.png)
+![Alt text](/images/bye_products2.png)
 
-## Code of Conduct
+### Entry Point & Initialization
+The vending machine entry point is main.rb
 
-Everyone interacting in the VendingAutomat project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/vending_automat/blob/master/CODE_OF_CONDUCT.md).
+Initialized with the following products in inventory:
+Product Name | Price | Quantity
+------------ | ----- | --------
+Coca Cola    | 2.00  | 2
+Sprite       | 2.50  | 2
+Fanta        | 2.70  | 3
+Orange Juice | 3.00  | 1
+Water        | 3.25  | 0
+
+Initialized with the following coins in cashbox:
+Value | Quantity
+----- | --------
+2.00  | 5
+1.00  | 5
+0.50  | 5
+0.20  | 5
+0.10  | 5
+0.05  | 5
+0.02  | 5
+0.01  | 5
+
+## Built With
+- Ruby 2.7.2
+- RSpec
+- Pry
+- Colorize
+- Rubocop
+- tty-prompt
